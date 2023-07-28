@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">
+            <div id="leftD">
+                <h2 id="degree">08 <sup id="sups">o</sup></h2>
+                <div class="mD">
+                    <h3 class="cname">London</h3>
+                    <span>
+                        <p id="lastUpdatetime">06.09</pid>
+
+                    </span>
+                </div>
+                <div>
+                    <p id="weatherIcon"><img class="icon" src="" alt=""> </p>
+                    <p id="weathercondition">
+                        </pid>
+                </div>
+            </div>
+            <div id="forecast">
+
+                <div>
+                    <h4 id="f4">Weather Forecast </h4>
+                </div>
+                <div>
+
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div id="daydetails">
+                        <p>Day</p>
+                        <p>Type</p>
+                        <p>Sunrise</p>
+                        <p>Sunset</p>
+                        <p>MaxTemp</p>
+                        <p>MinTemp</p>
+                        <p>MaxWind Kph</p>
+                        <p>Humidity</p>
+                        <p>Vision</p>
+
+                    </div>
+                    <div id="days"> </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="rightD">
+            <div id="searchD">
+                <input id="ipu" type="search" placeholder="Search Location" />
+                <i id="iconClicked" onclick="submit()" class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+            <hr />
+            <div id="loaction_historyD">
+                <p class="country">Country</p>
+                <p class="dcname">City cname</p>
+                <p class="cregion">Region</p>
+                <p class="direction">lat / lon</p>
+                <p class="ctimeZone">TimeZone</p>
+
+            </div>
+            <hr />
+            <div id="weatherDetailsD">
+                <p class="ddegreeC"> Degree</p>
+                <p class="ddaytype">DayType</p>
+                <p class="dwindSpeed">windSpeed</p>
+                <p class="dhumidity">humidity</p>
+                <p class="dfeelsLike">feelsLike</p>
+                <p class="duv">uv</p>
+                <p class="dvis">vision</p>
+                <p class="dco2">Co2</p>
+                <p class="do3">O3</p>
+            </div>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
